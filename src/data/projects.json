@@ -1,0 +1,136 @@
+{
+  "projects": [
+    {
+      "id": "pominis",
+      "company": "Pominis",
+      "role": "AI Fullstack Engineer",
+      "period": "February 2025 - Present",
+      "location": "San Francisco Bay Area",
+      "previewImage": "/images/pominis-preview.png",
+      "previewAlt": "Pominis React Flow Editor Preview",
+      "description": [
+        "Designed a multi-agent AI system for an interactive narrative game, doubling story generation capacity and reducing failure rate by 90%.",
+        "Built a React-Flow-based editor tool for creators to design customizable story nodes (characters, storylines, genres) with continuous AI generation.",
+        "Integrated tool-calling features with database manipulation to ensure seamless AI-data interaction and maintain integrity.",
+        "Architected a scalable JSON structure on Firebase Realtime Database to support dynamic story branching and offline data persistence."
+      ],
+      "demoLink": "https://pominis-react-flow.vercel.app/storylist",
+      "technologies": [
+        { "name": "React Flow", "color": "purple" },
+        { "name": "Firebase", "color": "orange" },
+        { "name": "AI Integration", "color": "green" }
+      ]
+    },
+    {
+      "id": "tomatosms",
+      "company": "TomatoSMS",
+      "role": "Full Stack Engineer",
+      "period": "June 2024 - Present",
+      "location": "San Francisco Bay Area",
+      "previewImage": "/images/tomato-preview.png",
+      "previewAlt": "TomatoSMS Dashboard Preview",
+      "isVertical": true,
+      "description": [
+        "Built a dynamic chart (Next.js, TailwindCSS, Chart.js) to visualize AI-generated insights about calorie consumption and burning.",
+        "Collaborated with the design team to ensure seamless UI/UX integration, focusing on mobile-first and fast-loading page performance.",
+        "Utilize WPGraphql and SSR to implement a Wordpress Blog System with SEO optimization."
+      ],
+      "websiteLink": "https://tomsms.com",
+      "technologies": [
+        { "name": "Next.js", "color": "green" },
+        { "name": "TailwindCSS", "color": "blue" },
+        { "name": "Chart.js", "color": "yellow" }
+      ]
+    },
+    {
+      "id": "opeach",
+      "company": "OPeach Studio",
+      "role": "Full Stack Engineer",
+      "period": "December 2022 - March 2025",
+      "location": "Daly City, CA",
+      "projects": [
+        {
+          "name": "PFRanger",
+          "previewImage": "/images/pfranger-preview.png",
+          "previewAlt": "PFRanger Application Preview",
+          "showInVertical": true,
+          "description": "A web app to show the range of push/fold in a no-limit hold'em poker game with custom input like chips and position.",
+          "technologies": [
+            { "name": "Redwood.js", "color": "orange" },
+            { "name": "Chakra UI", "color": "purple" }
+          ]
+        },
+        {
+          "name": "CoverletterHelper",
+          "previewImage": "/images/coverletter-preview.png",
+          "previewAlt": "CoverletterHelper Application Preview",
+          "showInVertical": true,
+          "description": "An AI-powered cover letter helper that personalizes content by analyzing a user's resume and job description prompts.",
+          "demoLink": "https://cover-letter-helper-kappa.vercel.app/",
+          "technologies": [
+            { "name": "Prompt Engineering", "color": "green" },
+            { "name": "Firebase", "color": "orange" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hollow",
+      "company": "A Hollow Place - Mysteries Game Club",
+      "role": "Full Stack Engineer",
+      "period": "April 2022 - December 2022",
+      "location": "Daly City, CA",
+      "previewImage": "/images/hollow-preview.png",
+      "isVertical": true,
+      "previewAlt": "A Hollow Place Website Preview",
+      "description": [
+        "Developed full-stack web applications using RedwoodJS, including dynamic routing, layout design, and component development.",
+        "Built and tested UI Components in Storybook.js and Jest.js with the collaboration of a designer.",
+        "Developed the web-app on Railway and deployed in Netlify Functions for better cost efficiency and real-time processing.",
+        "Experienced in developing with Graphql and Prisma, including schema design and database management."
+      ],
+      "websiteLink": "https://www.ahollowplace.com",
+      "technologies": [
+        { "name": "RedwoodJS", "color": "orange" },
+        { "name": "GraphQL", "color": "purple" },
+        { "name": "Prisma", "color": "green" }
+      ]
+    },
+    {
+      "id": "sfmeal",
+      "company": "SFMeal",
+      "role": "Full Stack Engineer",
+      "period": "November 2015 - June 2021",
+      "location": "San Francisco",
+      "description": [
+        "Built an online ordering platform with SailJS and MongoDB, enabling convenient ordering of authentic Chinese dishes.",
+        "Implemented comprehensive payment integration using Stripe API, including secure tokenization and automatic payouts.",
+        "Implemented AWS infrastructure with ELB for load balancing, S3 for storage, and Route53 for DNS management."
+      ],
+      "summary": "SFMeal is a platform that feeds you authentic Chinese dishes from individual chefs from China.",
+      "technologies": [
+        { "name": "SailJS", "color": "blue" },
+        { "name": "MongoDB", "color": "green" },
+        { "name": "AWS", "color": "yellow" },
+        { "name": "Stripe", "color": "purple" }
+      ]
+    },
+    {
+      "id": "plenry",
+      "company": "Plenry",
+      "role": "Lead Front-end Engineer",
+      "period": "October 2014 - March 2015",
+      "location": "Sunnyvale",
+      "description": [
+        "Led a team of three engineers to build a web application with ExpressJS, BackboneJS, and MongoDB.",
+        "Integrated social platform APIs using Hello.js, enabling seamless interaction with third-party platforms.",
+        "Collaborated with UI/UX designers to ensure a seamless user experience."
+      ],
+      "technologies": [
+        { "name": "ExpressJS", "color": "green" },
+        { "name": "BackboneJS", "color": "blue" },
+        { "name": "MongoDB", "color": "yellow" }
+      ]
+    }
+  ]
+}

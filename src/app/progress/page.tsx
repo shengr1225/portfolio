@@ -136,7 +136,8 @@ export default function Progress() {
     setIsModalOpen(true);
   };
 
-  const handleDeleteTask = async (taskId: string) => {
+  const handleDeleteTask = async (taskId: string | undefined) => {
+    if (!taskId) return;
     try {
       const response = await fetch(`/api/task/${taskId}`, {
         method: "DELETE",

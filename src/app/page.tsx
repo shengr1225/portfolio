@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-import NavigationButton from "@/components/NavigationButton";
 import GrowthPreview from "@/components/GrowthPreview";
 
 const Page = () => {

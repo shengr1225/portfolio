@@ -10,7 +10,7 @@ import { NextResponse } from "next/server";
 
 export async function PUT(
   req: Request,
-  { params }: { params: { taskId: string } }
+  { params }: { params: Promise<{ taskId: string }> }
 ) {
   const { taskId } = await params;
   const task = await req.json();
@@ -21,9 +21,8 @@ export async function PUT(
 
 export async function GET(
   req: Request,
-  { params }: { params: { taskId: string } }
+  { params }: { params: Promise<{ taskId: string }> }
 ) {
-  //implement get task by id
   const { taskId } = await params;
   const taskRef = collection(db, "tasks");
   const task = await getDoc(doc(taskRef, taskId));
@@ -32,7 +31,7 @@ export async function GET(
 
 export async function DELETE(
   req: Request,
-  { params }: { params: { taskId: string } }
+  { params }: { params: Promise<{ taskId: string }> }
 ) {
   const { taskId } = await params;
   const taskRef = collection(db, "tasks");

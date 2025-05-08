@@ -1,17 +1,6 @@
 import { Agent } from "@mastra/core/agent";
-import { Memory } from "@mastra/memory";
 import { getTasks } from "../tools";
 import { geminiModel } from "../models";
-
-const memory = new Memory({
-  options: {
-    lastMessages: 10,
-    semanticRecall: false,
-    threads: {
-      generateTitle: false,
-    },
-  },
-});
 
 export const personalAgent = new Agent({
   name: "Personal",
@@ -53,5 +42,4 @@ If there are no tasks, provide an encouraging message about setting new goals an
     getTasks: getTasks,
   },
   model: geminiModel,
-  memory: memory,
 });

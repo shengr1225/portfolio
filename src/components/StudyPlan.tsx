@@ -12,7 +12,7 @@ interface StudyPlanProps {
   loading: boolean;
   error: string | null;
   onStartTask: (task: TaskType) => void;
-  onDeleteTask: (taskId: string) => void;
+  onDeleteTask: (taskId: string | undefined) => void;
   getTaskColor: (type: TaskType["type"]) => "blue" | "green" | "purple";
   getWeekdayLabel: (date: string) => string;
 }
@@ -150,7 +150,9 @@ export default function StudyPlan({
                                 onStart={() => {
                                   onStartTask(task);
                                 }}
-                                onDelete={() => onDeleteTask(task.id)}
+                                onDelete={() =>
+                                  task.id && onDeleteTask(task.id)
+                                }
                               />
                             ))}
                           </div>

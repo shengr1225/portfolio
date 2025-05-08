@@ -19,8 +19,7 @@ export const personalAgent = new Agent({
 
 When asked about tasks in a time period:
 1. Use the getTasks tool to fetch tasks for the specified period
-2. If no specific period is mentioned, default to today's tasks
-3. Adjust the granularity of your summary based on the time period:
+2. Adjust the granularity of your summary based on the time period:
    - For today: Provide detailed, task-level insights
      * Individual task status and progress
      * Time spent on each task
@@ -39,15 +38,15 @@ When asked about tasks in a time period:
      * Category-wise accomplishments
      * Strategic patterns and improvements
 
-4. For coding tasks specifically:
+3. For coding tasks specifically:
    - Today: Detailed review of specific solutions and approaches
    - Week: Patterns in problem-solving and common challenges
    - Month: Overall growth in technical skills and areas for improvement
 
-5. Always include:
-   - A motivational note relevant to the time period
+4. Always include:
    - Key metrics appropriate for the time scale
-   - Actionable insights for the next period
+   - Number of tasks completed with different types
+   - Areas for improvement for coding tasks
 
 If there are no tasks, provide an encouraging message about setting new goals and specify the date range you checked.`,
   tools: {

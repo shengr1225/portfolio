@@ -39,7 +39,7 @@ const getMessage = (type: string) => {
     );
   } else if (type === "all") {
     return (
-      "Summary the completed tasks for today, this week and this month, today is " +
+      "Summary the completed tasks for today, this week and the month so far, today is " +
       new Date()
         .toLocaleString("default", { timeZone: "America/Los_Angeles" })
         .slice(0, 10) +
@@ -52,17 +52,7 @@ const getMessage = (type: string) => {
         new Date().setDate(new Date().getDate() - new Date().getDay() + 7)
       )
         .toLocaleString("default", { timeZone: "America/Los_Angeles" })
-        .slice(0, 10) +
-      " and the month is " +
-      new Date().toLocaleString("default", {
-        month: "long",
-        timeZone: "America/Los_Angeles",
-      }) +
-      " and year " +
-      new Date().toLocaleString("default", {
-        year: "numeric",
-        timeZone: "America/Los_Angeles",
-      })
+        .slice(0, 10)
     );
   }
 };
@@ -93,13 +83,13 @@ export async function POST(req: Request) {
   }
 
   console.log(
-    `[API Call] Starting generation for message: ${message.substring(0, 500)}...`
+    `[API Call] Starting generation for message: ${message.substring(0, 5000)}...`
   );
 
   const personalAgent = mastra.getAgent("personalAgent");
 
   const { text } = await personalAgent.generate(message);
-  console.log(`[API Call] Generated text: ${text.substring(0, 500)}...`);
+  console.log(`[API Call] Generated text: ${text.substring(0, 5000)}...`);
 
   const { object } = await personalAgent.generate(text, {
     output: taskSummaryArray,

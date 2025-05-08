@@ -43,11 +43,17 @@ const Navigation = () => {
             whileHover="hover"
             variants={linkVariants}
           >
-            <Link
-              href="/"
-              className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 px-1"
-            >
-              Portfolio
+            <Link href="/" className="flex items-center gap-3">
+              <div className="w-8 h-8 rounded-full overflow-hidden border border-white/10">
+                <img
+                  src="/profile.jpeg"
+                  alt="Sheng Rong"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                Sheng Rong
+              </span>
             </Link>
           </motion.div>
           <div className="flex items-center space-x-2 sm:space-x-4">
@@ -66,6 +72,20 @@ const Navigation = () => {
                 </Link>
               </motion.div>
             )}
+
+            <motion.div whileHover="hover" variants={linkVariants}>
+              <Link
+                href="/growth"
+                className="relative px-2 sm:px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white transition-colors group whitespace-nowrap"
+              >
+                <span className="relative z-10">Growth</span>
+                <motion.div
+                  className="absolute inset-0 rounded-md bg-white/0 group-hover:bg-white/10 transition-colors"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.2 }}
+                />
+              </Link>
+            </motion.div>
 
             <motion.div whileHover="hover" variants={linkVariants}>
               <Link

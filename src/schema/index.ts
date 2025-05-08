@@ -41,6 +41,19 @@ export const taskSummary = z.object({
   type: typeOfTasksSummary,
   date: z.string().describe("From YYYY-MM-DD to YYYY-MM-DD"),
   summary: z.string().describe("The summary of the tasks"),
+  majorMilestones: z
+    .string()
+    .describe("The major milestones achieved for the month")
+    .optional(),
+  productivity: z.string().describe("The productivity of the month").optional(),
+  accomplishments: z
+    .string()
+    .describe("The accomplishments of the month")
+    .optional(),
+  strategyPatterns: z
+    .string()
+    .describe("The strategy patterns for the month")
+    .optional(),
   improvement: z
     .string()
     .describe("Anything need to improve on algorithm and data structure")

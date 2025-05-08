@@ -48,7 +48,7 @@ const GrowthPreview = () => {
                 Personal AI Assistant
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto">
-                Your dedicated AI companion for tracking and optimizing career
+                My dedicated AI companion for tracking and optimizing career
                 growth, learning progress, and skill development
               </p>
             </div>
